@@ -11,6 +11,39 @@ body{
   margin: 0%;
 }
 
+@media (max-width:900px){
+  
+  .container{
+    font-size: 20px;
+    padding-top: 80px;
+    align-content: center;
+    margin: 5px 0 0 15px;
+  }
+  .info-bar{
+    size: 20%;
+    align-content: center;
+  }
+  #profile-photo{
+    border-radius: 90%;
+    width: 70%;
+    align-content: center;
+  }
+  .certificates-info{
+    margin-top: 13%;
+    margin-left: 0%;
+  }
+
+  .certicate-image:hover{
+    width: 70%;
+    height: 70%;
+  }
+
+  .certicate-image:hover{
+    width: 90%;
+    height: 90%;
+  }
+}
+
 #main-title{
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
@@ -18,7 +51,7 @@ body{
   top:0;
   overflow:hidden;
   position: fixed;
-  width:100%;
+  width:99%;
   background-color: #1a1a2e;
   top: 0;
 }
@@ -27,6 +60,8 @@ body{
   font-style:oblique;
   color: greenyellow;
 }
+
+@media (min-width:900px){
 .container{
   display:flex;
   flex-direction: row;
@@ -48,22 +83,32 @@ body{
   margin-top: 6px;
 }
 
+.certificates-info{
+  margin-left: 18%;
+  text-align: left;
+  margin-right: auto;
+  transition : 1s all;
+}
+#profile-photo{
+  border-radius: 90%;
+  width: 70%;
+  align-content: auto;
+}
+
+.certicate-image:hover{
+  width: 60%;
+  height: 60%;
+}
+}
+
+
 #info-paragraph:hover{
   color: white;
   text-align: center;
   background-color: black;
 }
 
-.certificates-info{
-  margin-left: 230px;
-  text-align: left;
-  margin-right: auto;
-  transition : 1s all;
-}
-.certicate-image:hover{
-  width: 60%;
-  height: 60%;
-}
+
 
 .cerificate-title{
   font-style: italic;
@@ -77,9 +122,6 @@ body{
   font-style: italic;
 }
 
-#profile-photo{
-  border-radius: 90%;
-}
 
 a:visited{
   color:white;
