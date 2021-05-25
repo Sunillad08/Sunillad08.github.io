@@ -1,0 +1,92 @@
+:root{
+  --background-color : #000000;
+  --sidebar-color : #16213e;
+  
+}
+
+body{
+  color: white;
+  background-color: var(--background-color);
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0%;
+}
+
+#main-title{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  border: 3px solid #e94560;
+  top:0;
+  overflow:hidden;
+  position: fixed;
+  width:100%;
+  background-color: #1a1a2e;
+  top: 0;
+}
+
+#main-title:hover{
+  font-style:oblique;
+  color: greenyellow;
+}
+.container{
+  display:flex;
+  flex-direction: row;
+  justify-content: baseline;
+  padding-top: 80px;
+}
+
+.info-bar{
+  margin-right: auto;
+  align-content: center;
+  z-index: 1;
+  padding: unset;
+  width: 15%;
+  height: 100%;
+  overflow-y: hidden;
+  position: fixed;
+  background-color: var(--sidebar-color);
+  padding-left: 10px;
+  margin-top: 6px;
+}
+
+#info-paragraph:hover{
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+.certificates-info{
+  margin-left: 230px;
+  text-align: left;
+  margin-right: auto;
+  transition : 1s all;
+}
+.certicate-image:hover{
+  width: 60%;
+  height: 60%;
+}
+
+.cerificate-title{
+  font-style: italic;
+}
+
+.cerificate-title:hover{
+  font-size: 120%;
+}
+
+#list:hover{
+  font-style: italic;
+}
+
+#profile-photo{
+  border-radius: 90%;
+}
+
+a:visited{
+  color:white;
+}
+a:hover{
+  color:#000000;
+  background-color: gray;
+  cursor: pointer;
+}
+
