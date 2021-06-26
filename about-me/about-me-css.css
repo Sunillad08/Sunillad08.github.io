@@ -42,9 +42,11 @@ body{
     align-content: center;
   }
   #profile-photo{
+    display: block;
     border-radius: 90%;
-    width: 70%;
-    align-content: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .certificates-info{
     margin-top: 13%;
@@ -92,14 +94,18 @@ body{
 
 .certificates-info{
   margin-left: 18%;
-  text-align: left;
+  list-style-type: none;
+  /* text-align: center; */
   margin-right: auto;
   transition : 1s all;
 }
 #profile-photo{
+  display: block;
   border-radius: 90%;
   width: 70%;
   align-content: auto;
+  margin-left: auto;
+    margin-right: auto;
 }
 
 .certicate-image:hover{
