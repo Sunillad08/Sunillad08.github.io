@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Page not found</title>
+
+	<style>
+		/* Design */
+		body{
+			background-color: black;
+			color:white;
+			margin: 0%;
+    			font-family: Georgia, 'Times New Roman', Times, serif;
+    			font-size: 18px;
+			height: 100vh;
+		}
+		main{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-content: center;
+			text-align: center;
+			user-select: none;
+		}
+		#main-title{
+			font-family: monospace , Times, serif;
+			margin: 10vh 40%;
+			padding: 2vh 5%;
+			font-size: 5em;
+		}
+		#main-error{
+			margin: 5vh 35%;
+			padding: 2vh 2%;;
+			font-size: 1.5em;
+		}
+		#main-description{
+			margin: 5vh 10%;
+			font-size: 1.1em;
+			border-radius: 10%;
+		}
+		#home-page-link>a{
+			font-size: 1.1em;
+			margin: 5vh 0;
+		}
+		#home-page-link>a{
+			font-size: 1.1em;
+			margin: 5vh 0;
+			padding: 2vh 5%;
+			background-color: #4F98CA;
+			border-radius: 2%;
+			box-shadow: #3b7094 5px 5px , #213f53 10px 10px;
+		}
+		#home-page-link>a:hover{
+			animation: button-animation 3s forwards;
+			font-size: 1.3em;
+		}
+		@keyframes button-animation {
+			0%{
+				box-shadow: #3b7094 5px 5px , #213f53 10px 10px;
+			}
+			50%{
+				box-shadow: #3b7094 3px 3px , #213f53 5px 5px;
+			}
+			100%{
+				box-shadow: #3b7094 1px 1px , #213f53 3px 3px;
+			}
+		}
+		#home-page-link>a:visited,
+		#home-page-link>a:link{
+			color: black;
+			text-decoration: none;
+		}
+		@media (max-width:800px) {
+			body{
+				font-size: 14px;
+			}			
+		}
+		@media (max-width:600px) {
+			body{
+				font-size: 12px;
+			}
+			#main-title{
+				margin: 10vh 0%;
+				padding: 2vh 10%;
+			}			
+		}
+	</style>
+</head>
+<body>
+        <main id='main'>
+		<p id="main-title">404</p>
+		<p id="main-error">🧐Page not found🙁</p>
+		<p id="main-description">Oops , the page you're looking at might be moved🤔 , removed😅 , broken😲 or never exitsted😵!</p>
+		<p id="home-page-link"><a href="./">Back Home</a></p>
+	</main>
+</body>
+</html>
