@@ -104,9 +104,10 @@ body{
     animation: description-animation 5s forwards;
 }
 
+/*
 @keyframes description-animation {
     0%{
-        /* color: #50D890; */
+        /* color: #50D890; //
         color:black;
         padding: 0px 20%;
         border-left: 3px groove #50D890;
@@ -124,6 +125,7 @@ body{
         color:white;
     }
 }
+*/
 
 @media (max-width : 750px){
     #title-name{
@@ -151,10 +153,10 @@ body{
             color:white;
         }
     }
-
+/*
     @keyframes description-animation {
         0%{
-            /* color: #50D890; */
+            /*color: #50D890; //
             color:black;
             padding: 0px 10%;
             border-left: 3px groove #50D890;
@@ -172,6 +174,7 @@ body{
             color:white;
         }
     }
+*/
 }
 
 /* section-2 : blogs */
@@ -244,8 +247,9 @@ body{
 }
 
 .blog-tile>p{
-    font-size: 0.8em;
+    font-size: 1.5em;
     font-style: italic;
+    text-align: center;
 }
 
 #blog-end-line{
