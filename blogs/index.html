@@ -6,24 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Blogs</title>
 	<link rel="stylesheet" href="../styles/navbar.css">
-	<style>
-		div{
-			padding-top: 10vh;
-			height: 90vh;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			background-color: black;
-			color: white;
-			font-size: 3em;
-		}
-		@media (max-width:800px) {
-			div{
-				font-size: 2em;
-			}
-			
-		}
-	</style>
+	<link rel="stylesheet" href="./blog.css">
 </head>
 <body>
 	<nav id="navbar">
@@ -32,6 +15,46 @@
 		<a class="nav-link" href="../about-me/">About Me</a>
 		<a class="nav-link" href="../#contact-me">Contact Me</a>
 	</nav>
-	<div>Coming soon . . . . </div>
+	<!-- sections : blogs-->
+    <section id='blogs'>
+		<div class="blog-row">
+		<div class="blog-tile">
+		  <h4><a href="/notes" target="_blank">Notes</a></h4>
+		  <p>
+			Notes about Linux , Windows , Cyber security & Networking.
+		  </p>
+		</div>
+		<div class="blog-tile">
+		  <h4><a href="/writeups" target="_blank">Writeups</a></h4>
+		  <p>
+			Writeups and walkthroughs for vulnerable machines.
+		  </p>
+		</div>
+		<div class="blog-tile">
+		  <h4> <a href="https://github.com/Sunillad08/Digital_Logic" target="_blank">Digital Logic</a></h4>
+		  <p>
+			Implementation of basic Digital logic circuits. Project released as python module <a href="https://pypi.org/project/LogicPy/" style="text-decoration: underline;
+			color:black;">LogicPy</a>.
+		  </p>
+		</div>
+		</div>
+		<div class="blog-row">  
+		<div class="blog-tile">
+		  <h4>Coming soon . . .</h4>
+		  <p>
+		  </p>
+		</div>
+		<div class="blog-tile">
+		  <h4>Coming soon . . .</h4>
+		  <p>
+		  </p>
+		</div>
+		<div class="blog-tile">
+		  <h4>Coming soon . . .</h4>
+		  <p>
+		  </p>
+		</div>
+		</div>
+	  </section>
 </body>
 </html>
