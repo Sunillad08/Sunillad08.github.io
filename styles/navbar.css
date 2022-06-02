@@ -1,4 +1,11 @@
 /* Body characteristics */
+:root{
+    --background-color : #FFFFFF;
+    --text-color : #000000;
+    --tile-color: #DDDDDD;
+    --tile-text-color : #000000;
+}
+
 body{
 	margin: 0%;
 	font-family: Georgia, 'Times New Roman', Times, serif;
