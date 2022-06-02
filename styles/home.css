@@ -1,0 +1,80 @@
+/* Main components */
+:root{
+    --background-color : #FFFFFF;
+    --text-color : #000000;
+    --tile-color: #DDDDDD;
+    --tile-text-color : #000000;
+}
+
+body{
+    margin: 0vh 0vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right,var(--background-color),var(--tile-color),var(--tile-color));
+	color:var(--text-color) ;
+    font-size: 18px;
+    margin-bottom: 10vh;
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+::selection {
+	color: white;
+	background: #3390FF;
+}
+
+#home{
+	color: var(--text-color);
+    margin: 5vh 10vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-header{
+    padding: 2vh 2vw;
+}
+
+.line{
+    font-size: 4em;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: text-animation 2s forwards;
+}
+
+@keyframes text-animation {
+    0%{
+        color: transparent;
+        padding: 5vh 10vw;
+    }
+    100%{
+        color: black;
+    }
+}
+
+/* Responsive main page */
+
+/* Tablet */
+@media(max-width:770px){
+    body{
+        font-size:  0.8em;
+    }
+    .line{
+        font-size: 3.5em;
+    }
+}
+
+/* Mobile */
+@media(max-width:430px){
+    body{
+        font-size:  0.65em;
+    }
+    .line{
+        font-size: 3em;
+    }
+}

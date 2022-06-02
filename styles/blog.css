@@ -1,0 +1,135 @@
+/* Main components */
+:root{
+    --background-color : #FFFFFF;
+    --text-color : #000000;
+    --tile-color: #DDDDDD;
+    --tile-text-color : #000000;
+}
+
+body{
+    margin: 0vh 0vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--background-color) ;
+	color:var(--text-color) ;
+    font-size: 18px;
+    margin-bottom: 10vh;
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+::selection {
+	color: white;
+	background: #3390FF;
+}
+
+/* Blog page */
+#blogs{
+    padding: 5vh 0;
+    margin: 0 3vw;
+}
+
+#main-title{
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* Blog row */
+.blog-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* blog tile */
+.blog-tile{
+    display: flex;
+    flex:1;
+    margin:10px 10px;
+    border-radius: 10px;
+    border: 5px #808080 solid;
+    background-color: var(--tile-color);
+    box-shadow: #cdcdcd -10px 10px ;
+    color: var(--tile-text-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-tile::-webkit-scrollbar{
+    display: none;
+}
+
+.blog-tile:hover{
+    box-shadow: #cdcdcd -5px 5px ;
+}
+
+.blog-title{
+    font-weight: 800;
+    font-size: 2em;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.blog-title:hover{
+    text-decoration: underline;
+}
+
+.horizontal-line{
+    width: 80%;
+    font-size: 1px;
+    background-color: black;
+}
+
+.blog-flex{
+    flex: 2;
+}
+
+.blog-desc{
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Responsive blog page */
+/* Tablet */
+@media (max-width:770px) {
+
+    body{
+        font-size:  0.8em;
+    }
+    .blog-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog-tile{
+        width: 80%;
+        padding-left: 1vh ;
+        padding-right: 1vh ;
+    }
+    
+}
+
+/* Mobile */
+@media(max-width:430px){
+    body{
+        font-size: 0.65em;
+    }
+    #main-title{
+        font-size: 2em;
+    }
+    .blog-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog-flex{
+        flex: none;
+    }
+    .blog-tile{
+        width: 80%;
+    }
+}
