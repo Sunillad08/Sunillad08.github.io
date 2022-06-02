@@ -1,0 +1,127 @@
+/* Main components */
+:root{
+    --background-color : #FFFFFF;
+    --text-color : #000000;
+	--tile-color: #DDDDDD;
+	--tile-text-color : #000000;
+}
+
+body{
+    margin: 0vh 0vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--background-color) ;
+	color:var(--text-color) ;
+    font-size: 18px;
+	margin-bottom: 10vh;
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+::selection {
+	color: white;
+	background: #3390FF;
+}
+
+/* Contact page */
+
+#contact-me{
+    padding:5vh 0;
+    margin: 0 3vw;
+}
+
+#main-title{
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.main-tile{
+    display: flex;
+    flex:1;
+    margin: 0vh 10vw;
+	margin-top: 5vh;
+    border-radius: 10px;
+    border: 5px #808080 solid;
+    background-color: var(--tile-color);
+    box-shadow: #cdcdcd -10px 10px ;
+    color: var(--tile-text-color);
+    flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+
+.contact-me-tile{
+	margin: 0;
+	padding: 5vh 0vw;
+}
+
+#profile-photo{
+	user-select: none;
+	width: 25vw;
+	height: auto;
+	border-radius: 25vw;
+}
+
+#name{
+	font-size: 5vw;
+	font-weight: 600;
+	text-align: center;
+}
+
+.social-media{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.social-media-svg{
+	height: 3vw;
+}
+
+/* Responsive contact page */
+/* Tablet */
+@media (max-width:770px) {
+
+    body{
+        font-size:  0.8em;
+    }
+    .main-tile{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.contact-me-tile{
+		padding: 0;
+		justify-content: center;
+	}
+    #profile-photo{
+		width: 40vw;
+		margin-top: 5vh;
+	}
+	.social-media{
+		padding-bottom: 5vh;
+	}
+    #name{
+		font-size: 4em;
+	}
+	.social-media-svg{
+		height: 3em;
+	}
+}
+
+/* Mobile */
+@media(max-width:430px){
+    body{
+        font-size: 0.65em;
+    }
+    #profile-photo{
+		width: 50vw;
+	}
+	.social-media{
+		padding-bottom: 5vh;
+	}
+}

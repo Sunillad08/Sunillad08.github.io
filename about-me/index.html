@@ -5,115 +5,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" type='text/css' href="./about-me.css">
+    <title>Sunil Lad | About Me</title>
+    <link rel="stylesheet" type='text/css' href="../styles/about-me.css">
     <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="icon" type="image/x-icon" href="../Images/try_images/logo2.png">
 </head>
 
 <body>
     <!-- navbar -->
     <nav id="navbar">
-        <a class="nav-link" href="../Home/">Home</a>
-        <a class="nav-link" href="../blogs/">Blogs</a>
-        <a class="nav-link" href="../about-me/">About Me</a>
-        <a class="nav-link" href="../#contact-me">Contact Me</a>
-    </nav>
-     
-    <!-- main section -->
-    <section class='main-section'>
-        
-        <!--info-->
-        <div class='info-bar'>
-            <img id='profile-photo' src='../Images/Profile-photo-1.jpeg' alt='Profile Photo'>
+		<a class="nav-link" href="..">Home</a>
+		<a class="nav-link" href="../blogs/">Blogs</a>
+		<a class="nav-link" href="../about-me/" id="current-link">About Me</a>
+		<a class="nav-link" href="../contact-me">Contact Me</a>
+	</nav>
+    
+    <div id="about-me">
+        <div  id="main-title">
+            <a href="../about-me/" target='_blank'>< About Me /></a>
+            <hr>
+        </div>
 
-            <div id='info-bar-section'>
-            <p class="info-lines">Name : Sunil Chandrakant Lad</p>
-            <p class="info-lines">Current : Electronic and Telecommunication Engineering Student (2019 - 2023)</p>
-            <p class="info-lines">Hobbies : Loves Coding , reading books and learning new things ..!</p>
-            <p class="info-lines">Interest : Python coding , Networking , Cyber security and Pentesting</p>
-            <p class="info-lines">College : St. Francis Institute of Technology</p>
+        <!-- Profile photo -->
+        <img id='profile-photo' src='../Images/profile photo-cw.jpg' alt='Profile Photo'>
+
+        <!-- info blocks -->
+        <div id="about-me-column">
+            <div class="about-me-tile" id='info'>
+                <p class="info-lines">Name : Sunil Chandrakant Lad</p>
+                <p class="info-lines">Current : Electronic and Telecommunication Engineering Student (2019 - 2023)</p>
+                <p class="info-lines">Interests : Cyber security , Python coding and Networking</p>
+                <p class="info-lines">College : St. Francis Institute of Technology</p>
             </div>
 
-            <div id="info-bar-link-section">
-                <p id='info-bar-links'>Checkout my work:</p>
-                <p class='info-bar-link-bar'>
-                    <svg class='info-bar-link-svg' fill='#000000' width="1em" height="1em" viewBox="0 0 24 24" class='contact-tile-svg' ><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                    <a href='https://github.com/Sunillad08' target="_blank" class='info-links'>Github</a>
-                </p>
-                <p class='info-bar-link-bar'>
-                    <svg class='info-bar-link-svg' xmlns="http://www.w3.org/2000/svg"  fill="#000000" width="1em" height="1em" viewBox="0 0 32 32" ><path d="M 15.998047 3 C 14.225047 3 5.5352031 7.9839062 4.6582031 9.5039062 C 3.7802031 11.024906 3.7802031 20.983047 4.6582031 22.498047 C 5.5392031 24.017047 14.229047 29 15.998047 29 C 17.762047 29 26.451938 24.019953 27.335938 22.501953 C 28.222938 20.979953 28.222938 11.014047 27.335938 9.4980469 L 27.335938 9.4960938 C 26.444937 7.9790937 17.756047 3 15.998047 3 z M 15.996094 5.0117188 C 17.693094 5.3647187 24.417703 9.2167656 25.595703 10.509766 C 26.135703 12.150766 26.134703 19.844281 25.595703 21.488281 C 24.425703 22.779281 17.695094 26.636281 15.996094 26.988281 C 14.298094 26.638281 7.5723906 22.783234 6.4003906 21.490234 C 5.8653906 19.842234 5.8653906 12.155766 6.4003906 10.509766 C 7.5693906 9.2167656 14.297094 5.3617187 15.996094 5.0117188 z M 13 9 L 11 11 L 12 11 L 12 21 L 14 21 L 14 17 L 18 17 L 18 21 L 17 21 L 19 23 L 21 21 L 20 21 L 20 12 L 18 12 L 18 15 L 14 15 L 14 11 L 15 11 L 13 9 z"/></svg> 
-                    <a href='https://www.hackerrank.com/ColdSun08' target="_blank" class='info-links'>HackerRank</a>
-                </p>
-                <p class='info-bar-link-bar'>
-                    <svg class='info-bar-link-svg' xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 700.08435 482.89237"><path id="path1" transform="translate(0,-569.46988)" style="fill:#000" d="m 117.51293,1051.6318 c -12.14837,-2.9002 -29.728148,-18.1522 -49.221868,-42.7042 c -39.570999,-49.83893 -61.0574994,-105.73952 -67.38493937,-175.31253 c -1.21782,-13.3906 -1.20559,-47.2689 0.0216,-59.6663 c 5.78590997,-58.45296 26.23995037,-108.79162 63.77079937,-156.94389 c 11.49299,-14.74558 30.54062,-34.06267 39.663438,-40.22459 c 12.90812,-8.71862 21.03329,-9.42362 28.83032,-2.50149 c 3.18001,2.82319 3.91138,4.13656 4.31868,7.75537 c 0.7669,6.81375 -2.72585,12.13801 -18.96746,28.91356 c -22.696898,23.44307 -33.167868,36.49307 -44.766288,55.79234 c -26.338069,43.82543 -37.608569,89.91434 -35.992979,147.1875 c 0.86072,30.51293 4.12574,53.0042 11.32601,78.01991 c 6.48504,22.53075 14.26864,40.69688 25.924939,60.50619 c 11.70369,19.8898 21.53849,32.4739 41.204948,52.72393 c 17.25351,17.7655 21.53909,23.9358 21.53909,31.0118 c 0,7.0391 -4.96843,13.4053 -11.98224,15.3532 c -3.87451,1.0761 -4.13811,1.0789 -8.284,0.089 z m 455.44089,0.2665 c -3.6719,-0.7795 -10.2381,-7.8414 -10.9785,-11.8072 c -1.1931,-6.3904 2.6087,-12.0821 20.332,-30.4391 c 8.7214,-9.0333 19.4526,-20.90733 23.8469,-26.38683 c 32.1524,-40.09154 50.0156,-84.70127 54.7815,-136.80559 c 1.4691,-16.06232 0.7096,-57.4481 -1.3391,-72.96716 c -4.2915,-32.50699 -12.2125,-59.101 -25.932,-87.06485 c -13.128,-26.75819 -26.7099,-45.73656 -49.6485,-69.375 c -15.4037,-15.87371 -19.9446,-21.67017 -21.493,-27.43577 c -1.5177,-5.65161 -0.4267,-9.8484 3.8122,-14.66398 c 5.8143,-6.60538 12.4561,-7.1946 22.8501,-2.02712 c 12.5814,6.25493 28.8861,22.58937 47.8125,47.89962 c 38.0781,50.92197 57.7171,106.94211 62.4372,178.10225 c 4.0104,60.46144 -10.6568,121.66332 -41.3038,172.3482 c -21.1547,34.98623 -53.4295,70.83673 -70.6155,78.43883 c -4.4918,1.987 -10.9367,2.9534 -14.562,2.1837 z m -380.08337,-36.8677 c -10.28745,-3.1184 -16.25136,-13.4004 -13.77065,-23.74113 c 1.53405,-6.3947 7.95351,-12.9693 14.1986,-14.5418 c 6.29118,-1.5842 331.73282,-1.5842 338.02402,0 c 6.4375,1.6209 12.762,8.2164 14.1687,14.7756 c 1.8436,8.59633 -2.0197,17.39503 -9.5253,21.69413 l -3.9679,2.2727 l -168.28125,0.159 c -92.55469,0.088 -169.43548,-0.1909 -170.84622,-0.6185 z m 128.18997,-79.10931 c -31.25226,-11.36715 -57.25414,-33.51988 -70.56464,-60.11872 c -7.39978,-14.78724 -11.69506,-32.69699 -11.69168,-48.75 c 0.005,-21.70289 8.49132,-42.38356 34.34641,-83.69612 c 19.25748,-30.77058 22.53856,-36.37804 28.2009,-48.19613 c 7.53515,-15.72687 10.01962,-25.06764 10.17751,-38.264 c 0.15089,-12.61133 -1.7391,-20.09344 -7.5478,-29.88024 c -4.12329,-6.94714 -13.3994,-17.40446 -17.16656,-19.35253 c -6.13981,-3.17502 -7.41241,-7.48767 -3.05249,-10.3444 c 6.89544,-4.51807 25.73535,-1.65272 43.04416,6.54654 c 19.58504,9.27752 34.01993,22.59896 43.41986,40.07061 c 7.2448,13.46592 10.1658,23.78505 15.07964,53.27252 c 5.45287,32.72211 10.85838,43.10388 21.78902,41.84779 c 5.79215,-0.66561 9.40698,-2.86376 11.84605,-7.20349 c 3.88524,-6.91287 2.21986,-16.37519 -5.638,-32.03379 c -6.42005,-12.79345 -6.0227,-16.65931 1.50762,-14.66788 c 3.90047,1.03149 16.5567,11.36919 25.31937,20.68104 c 21.92392,23.29795 32.83524,44.46488 38.0824,73.87633 c 2.75216,15.42644 2.98126,41.00657 0.48698,54.375 c -3.14675,16.86545 -9.52427,32.78449 -18.58816,46.39825 c -10.10669,15.18002 -31.19068,34.38621 -46.51897,42.37585 c -6.92209,3.60805 -9.32469,3.82678 -12.71769,1.15785 c -4.22027,-3.31967 -3.32896,-5.62767 6.0003,-15.53749 c 14.01697,-14.88926 21.17338,-25.47392 25.32527,-37.45728 c 6.40578,-18.48865 3.21723,-44.26491 -7.50796,-60.69426 c -4.44225,-6.80483 -10.95335,-12.80542 -13.89487,-12.80542 c -1.6103,0 -1.34313,2.12472 1.64246,13.06159 c 1.04617,3.83232 1.90212,8.51603 1.90212,10.40824 c 0,10.00778 -14.12604,17.26255 -26.56914,13.64525 c -10.11201,-2.93965 -14.56941,-12.11029 -13.23012,-27.21961 c 0.41387,-4.66907 0.78411,-13.15351 0.82275,-18.8543 c 0.0682,-10.05201 -0.0289,-10.56052 -3.21099,-16.83594 c -6.2022,-12.2312 -20.54678,-24.83023 -28.27035,-24.83023 c -3.33075,0 -3.60465,0.20129 -3.60465,2.64908 c 0,1.64378 0.92404,3.51158 2.43498,4.92188 c 8.00106,7.46811 9.50696,22.7712 3.57025,36.28131 c -3.66922,8.35 -7.80677,13.07915 -21.93727,25.07385 c -18.59248,15.78227 -24.58362,23.29724 -28.29903,35.49682 c -1.71871,5.64339 -1.89614,7.93993 -1.4124,18.28125 c 0.81216,17.36174 4.35055,28.87034 12.62068,41.04864 c 6.34961,9.35021 13.78457,15.28248 23.88216,19.05527 c 4.85612,1.81441 5.39063,2.28304 5.39063,4.72627 c 0,2.83211 -2.15357,4.69364 -5.329,4.60634 c -0.93624,-0.026 -5.49913,-1.42784 -10.13975,-3.11574 z"/>
-                    </svg>
-                    <a href="https://www.freecodecamp.org/sunillad08" target="_blank" class='info-links'>Freecodecamp</a>
-                </p>
-                <p class='info-bar-link-bar'>
-                    <svg class='info-bar-link-svg' fill='#000000' width="1em" height="1em" viewBox="0 0 24 24" class='contact-tile-svg' ><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                    <a href="https://www.linkedin.com/in/sunil-lad-11b542215/" target="_blank" class='info-links'>LinkedIn</a>
-                </p>
-                <p class="info-bar-link-bar">
-                    <svg class='info-bar-link-svg' xmlns="http://www.w3.org/2000/svg"  width="1em" height="1em" enable-background="new 0 0 2225.2 2230.7" viewBox="0 0 2225.2 2230.7"><g stroke-miterlimit="10"><path d="m699.9 98.8s-597.3 699.4 135.7 1478.5c0 0-643.4-214-713.4-713.4 0 0-103.5-509.1 577.7-765.1z" fill="#000000" stroke="#6bb94e"/><path d="m639.7 1119.9s83.9-1021.1 1156.8-891c0 0-465.8-381.9-895.2-158.1-1.4 0-611.3 331.5-261.6 1049.1z" fill="#000000" stroke="#ed7540"/><path d="m891.5 668.1s261.6-437.8 923.2-345.5c0 0 479.8 144.1 401.4 979.1-1.4 0-267.2-1011.3-1324.6-633.6z" fill="#000000" stroke="#e9565f"/><path d="m1431.4 644.3s815.5 797.3 0 1566.6c0 0 499.4-132.9 688.2-594.5 0 0 193-686.7-688.2-972.1z" fill="#000000" stroke="#e9589f"/></g><path d="m1693 1189.8s-363.7 1035.1-1342.8 734.3c0 0 292.3 398.6 812.7 286.7-.1.1 661.5-50.2 530.1-1021z" fill="#000000"/><path d="m35.5 896.1s226.6 937.2 1314.8 720.4c0 0-384.7 468.6-1000.1 230.8 0-.1-482.6-244.8-314.7-951.2z" fill="#000000"/></svg>
-                    <a href="https://www.sololearn.com/profile/14716401" target="_blank" class='info-links'>Sololearn</a>
-                </p>
+        <!-- work profiles on other sites -->
+            <div  class="section-title">
+                <h4># Checkout my profiles on this sites : </h4>
+            </div>
+            <div id="work" class="about-me-tile">
+                <div class="work-tile-row">
+                <div class="work-tile">
+                    <a href="https://tryhackme.com/p/ColdSun08" target="_blank" class='work-tile-links'><img src="../Images/SVG/tryhackme.svg" class='work-tile-svg' alt=" "> TryHackMe</a>
+                </div>
+                <div class='work-tile'>
+                    <a href='https://github.com/Sunillad08' target="_blank" class='work-tile-links'><img src="../Images/SVG/github.svg" class='work-tile-svg' alt=" "> Github</a>
+                </div>
+                </div>
+                <div class="work-tile-row">
+                <div class='work-tile'>
+                    <a href='https://www.hackerrank.com/ColdSun08' target="_blank" class='work-tile-links'><img src="../Images/SVG/hackerrank.svg" class='work-tile-svg' alt=" "> HackerRank</a>
+                </div>
+                <div class='work-tile'>
+                    <a href="https://www.freecodecamp.org/sunillad08" target="_blank" class='work-tile-links'><img src="../Images/SVG/freecodecamp.svg" class='work-tile-svg' alt=" "> Freecodecamp</a>
+                </div>
+                </div>
+                <div class="work-tile-row">
+                <div class='work-tile'>
+                    <a href="https://www.linkedin.com/in/sunil-lad-11b542215/" target="_blank" class='work-tile-links'><img src="../Images/SVG/linkedin.svg" class='work-tile-svg' alt=" "> LinkedIn</a>
+                </div>
+                <div class="work-tile">
+                    <a href="https://www.sololearn.com/profile/14716401" target="_blank" class='work-tile-links'><img src="../Images/SVG/sololearn.svg" class='work-tile-svg' alt=" "> Sololearn</a>
+                </div>
+                </div>
             </div>
             
+        <!-- Certificates -->
+        <div class="section-title">
+            <h4>⭐ Certificates & badges ⭐</h4>
         </div>
 
-        <!--Main content-->
-        <div class='certificates-info'>
-            <p id='certificates-info-title'>Certificates :</p>
+        <div id='certificates'>
             
-            <p class = "cerificate-title">Python</p>
-        <div class='certicate-image-block'>
-            <img class='certicate-image' src="../Images/Coding certificates/Python_certificate.jpg" alt="Python Certificate" width=50%>
+            <div class="certificate-tile">
+                <div class = "certificate-title">TryHackMe</div>
+                <div class='certificate-image-block'>
+                    <script src="https://tryhackme.com/badge/552899">
+                    </script>
+                </div>
+            </div>
 
-            <img class='certicate-image' src="../Images/Coding certificates/Python-core.png" alt="Python Certificate" width=50%>
-            
-            <img class='certicate-image' src="../Images/Coding certificates/Hacker rank python basic.png" alt="Python Certificate" width=50%>
+            <div class="certificate-tile">
+                <div class = "certificate-title">Python</div>
+                <div class='certificate-image-block'>
+                    <img class='certificate-image' src="../Images/Coding certificates/Python_certificate.jpg" alt="certificate">
+                    <img class='certificate-image' src="../Images/Coding certificates/Python-core.png" alt="certificate">
+                    <img class='certificate-image' src="../Images/Coding certificates/Hacker rank python basic.png" alt="certificate">
+                    <img class='certificate-image' src="../Images/Coding certificates/hackaerrank python int.png" alt="certificate">
+                </div>
+            </div>
 
-            <img class='certicate-image' src="../Images/Coding certificates/hackaerrank python int.png" alt="Python Certificate" width=50%>
+            <div class="certificate-tile">
+                <div class = "certificate-title">Problem Solving</div>
+                <div class='certificate-image-block'>
+                    <img class='certificate-image' src="../Images/Coding certificates/hackaerrank problem solving.png" alt="certificate">
+                </div>
+            </div>
 
-        </div>
+            <div class="certificate-tile">
+                <div class = "certificate-title">JavaScript</div>
+                <div class='certificate-image-block'>
+                    <img class='certificate-image' src="../Images/Coding certificates/javascript.png" alt="certificate">
+                </div>
+            </div>
 
-        <p class = "cerificate-title">Problem Solving</p>
-        <div class='certicate-image-block'>
-            <img class='certicate-image' src="../Images/Coding certificates/hackaerrank problem solving.png" alt="Python Certificate" width=50%>
-        </div>
-
-        <p class = "cerificate-title">JavaScript</p>
-        <div class='certicate-image-block'>
-            <img class='certicate-image' src="../Images/Coding certificates/javascript.png" alt="Python Certificate" width=50%>
-        </div>
-
-        <p class = "cerificate-title">Responsive Web Design</p>
-        <div class='certicate-image-block'>
-            <img class='certicate-image' src="../Images/Coding certificates/responsive-web.png" alt="Python Certificate" width=50%>
-        </div>
+            <div class="certificate-tile">
+                <div class = "certificate-title">Responsive Web Design</div>
+                <div class='certificate-image-block'>
+                    <img class='certificate-image' src="../Images/Coding certificates/responsive-web.png" alt="certificate">
+                </div>
+            </div>
         
-        <p class = "cerificate-title">Data analysis</p>
-        <div class='certicate-image-block'>
-            <img class='certicate-image' src="../Images/Coding certificates/Data-analysis cerificate.png" alt="Python Certificate" width=50%>
+            <div class="certificate-tile">
+                <div class = "certificate-title">Data analysis</div>
+                <div class='certificate-image-block'>
+                    <img class='certificate-image' src="../Images/Coding certificates/Data-analysis cerificate.png" alt="certificate">
+                </div>
+            </div>
+
+            <div class="certificate-tile">
+                <div class = "certificate-title">HTML</div>
+                <div class='certificate-image-block'>
+                    <img class='certificate-image' src="../Images/Coding certificates/HTML_certificate.jpg" alt="certificate">
+                </div>
+            </div>
+
+            <div class="certificate-tile">
+                <div class = "certificate-title">C#</div>
+                <div class='certificate-image-block'>
+                    <img class='certificate-image' src="../Images/Coding certificates/CSharp_certificate.jpg" alt="certificate">
+                </div>
+            </div>
+
+            <div class="certificate-tile">
+                <div class = "certificate-title">Java</div>
+                <div class='certificate-image-block'>
+                    <img class='certificate-image' src="../Images/Coding certificates/Java_certificate.jpg" alt="certificate">
+                </div>
+            </div>
+
         </div>
 
-        <p class = "cerificate-title">HTML</p>
-        <div class='certicate-image-block'>
-            <img class='certicate-image' src="../Images/Coding certificates/HTML_certificate.jpg" alt="Python Certificate" width=50%>
-        </div>
+        <!-- Collapsible certificate block -->
+        <script>
+            var coll = document.getElementsByClassName("certificate-title");
+            var i;
 
-        <p class = "cerificate-title">C#</p>
-        <div class='certicate-image-block'>
-            <img class='certicate-image' src="../Images/Coding certificates/CSharp_certificate.jpg" alt="Python Certificate" width=50%>
-        </div>
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "flex") {
+                content.style.display = "none";
+                } else {
+                content.style.display = "flex";
+                }
+            });
+            }
+        </script>
 
-        <p class = "cerificate-title">Java<p>
-        <div class='certicate-image-block'>
-            <img class='certicate-image' src="../Images/Coding certificates/Java_certificate.jpg" alt="Python Certificate" width=50%>
-        </div>
-        
-        </div>
-    </section>
+    </div>
 </body>
 </html>
