@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="./styles/home.css" />
     <link rel="stylesheet" href="../styles/navbar.css">
 	  <link rel="stylesheet" href="../styles/blog.css">
-
-
+    <link rel="stylesheet" type='text/css' href="../styles/about-me.css">
+    <link rel="stylesheet" href="../styles/contact-me.css">
   </head>
 
   <body>
     
     <!-- Navbar -->
     <nav id="navbar">
-      <a class="nav-link" href="." id="current-link">Home</a>
-      <a class="nav-link" href="#blogs">Blogs</a>
+      <a class="nav-link" href="#home" id="current-link">Home</a>
+      <a class="nav-link" href="/blogs">Blogs</a>
       <a class="nav-link" href="/about-me">About Me</a>
       <a class="nav-link" href="/contact-me">Contact Me</a>
+      
+      
     </nav>
 
     <!-- home -->
@@ -34,6 +36,7 @@
     </div>
     
 
+    <!-- sections : blogs-->
     <div id='blogs'>
 
       <div  id="main-title">
@@ -49,16 +52,6 @@
           Writeups and walkthroughs for vulnerable machines and CTF challenges.
           </p>
         </div>
-        <div class="blog-tile" style="flex:2">
-          <a class="blog-title" href="https://sunillad08.github.io" target="_blank">Portfolio Website</a>
-          <p class="horizontal-line">-</p>
-          <p class="blog-desc">
-            My portfolio website created using HTML , CSS and JS.
-          </p>
-        </div>
-      </div>
-  
-      <div class="blog-row">
         <div class="blog-tile">
           <a class="blog-title" href="/notes" target="_blank">Notes</a>
           <p class="horizontal-line">-</p>
@@ -66,7 +59,17 @@
           Notes about Linux , Windows , Cyber security & Networking.
           </p>
         </div>
-        <div class="blog-tile">
+      </div>
+  
+      <div class="blog-row">
+        <div class="blog-tile" style="flex:3">
+          <a class="blog-title" href="https://sunillad08.github.io" target="_blank">Portfolio Website</a>
+          <p class="horizontal-line">-</p>
+          <p class="blog-desc">
+            My portfolio website created using HTML , CSS and JS.
+          </p>
+        </div>
+        <div class="blog-tile" style="flex:2">
           <a class="blog-title" href="https://github.com/Sunillad08/Digital_Logic" target="_blank">Digital Logic</a>
           <p class="horizontal-line">-</p>
           <p class="blog-desc">
@@ -76,8 +79,223 @@
           </p>
         </div>
       </div>
+  
+      <div class="blog-row">
+        
+        <div class="blog-tile">
+          <a class="blog-title" href="https://github.com/Sunillad08/Web_scraping_projects" target="_blank">Web Scraping Projects</a>
+          <p class="horizontal-line">-</p>
+          <p class="blog-desc">
+            Project in python using BeautifulSoup library. It can scrap data from Instagram account , Youtube explore and Twitter explore page.
+            <a href="https://github.com/Sunillad08/Web_scraping_projects"></a>
+          </p>
+        </div>
+      </div>
+  
+      <div class="blog-row">
+        <div class="blog-tile">
+          <a class="blog-title" href="https://github.com/Sunillad08/Python_code" target="_blank">Python codes</a>
+          <p class="horizontal-line">-</p>
+          <p class="blog-desc">
+            Python codes and projects I have written.
+          </p>
+          </div>
+        <div class="blog-tile blog-flex">
+          <a class="blog-title" href="https://github.com/Sunillad08/colors3x3" target="_blank">Colors 3x3</a>
+          <p class="horizontal-line">-</p>
+          <p class="blog-desc">
+            Colors 3x3 is algorithm that creates 3x3 grid picture with random colors and upload them directly to instagram account <a href="https://instagram.com/colors3x3" style="text-decoration: underline;
+            color:black;">colors3x3</a>.
+          </p>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- sections : about me -->
+    <div id="about-me">
+      <div  id="main-title">
+          <a href="../about-me/" target='_blank'>< About Me /></a>
+          <hr>
+      </div>
+
+      <!-- Profile photo -->
+      <img id='profile-photo' src='../Images/Profile photos/officebw.png' alt='Profile Photo'>
+
+      <div id="resume-link">
+          <a id="resume" href="../Images/Resume.pdf" download="Sunil Lad Resume.pdf" style="color: black;">Download Resume</a>
+      </div>
+
+      <!-- info blocks -->
+      <div id="about-me-column">
+          <div class="about-me-tile" id='info'>
+              <p class="info-lines">Name : Sunil Chandrakant Lad</p>
+              <p class="info-lines">Current : Electronic and Telecommunication Engineering Student (2019 - 2023)</p>
+              <p class="info-lines">Interests : Cyber security , Python coding and Networking</p>
+              <p class="info-lines">College : St. Francis Institute of Technology</p>
+          </div>
+      <!-- work profiles on other sites -->
+          <div  class="section-title">
+              <h4># Checkout my profiles on this sites : </h4>
+          </div>
+          <div id="work" class="about-me-tile">
+              <div class="work-tile-row">
+              <div class="work-tile">
+                  <a href="https://tryhackme.com/p/ColdSun08" target="_blank" class='work-tile-links'><img src="../Images/SVG/tryhackme.svg" class='work-tile-svg' alt=" "> TryHackMe</a>
+              </div>
+              <div class='work-tile'>
+                  <a href='https://github.com/Sunillad08' target="_blank" class='work-tile-links'><img src="../Images/SVG/github.svg" class='work-tile-svg' alt=" "> Github</a>
+              </div>
+              </div>
+              <div class="work-tile-row">
+              <div class='work-tile'>
+                  <a href='https://www.hackerrank.com/ColdSun08' target="_blank" class='work-tile-links'><img src="../Images/SVG/hackerrank.svg" class='work-tile-svg' alt=" "> HackerRank</a>
+              </div>
+              <div class='work-tile'>
+                  <a href="https://www.freecodecamp.org/sunillad08" target="_blank" class='work-tile-links'><img src="../Images/SVG/freecodecamp.svg" class='work-tile-svg' alt=" "> Freecodecamp</a>
+              </div>
+              </div>
+              <div class="work-tile-row">
+              <div class='work-tile'>
+                  <a href="https://www.linkedin.com/in/sunil-lad-11b542215/" target="_blank" class='work-tile-links'><img src="../Images/SVG/linkedin.svg" class='work-tile-svg' alt=" "> LinkedIn</a>
+              </div>
+              <div class="work-tile">
+                  <a href="https://www.sololearn.com/profile/14716401" target="_blank" class='work-tile-links'><img src="../Images/SVG/sololearn.svg" class='work-tile-svg' alt=" "> Sololearn</a>
+              </div>
+              </div>
+          </div>
+          
+      <!-- Certificates -->
+      <div class="section-title">
+          <h4>⭐ Certificates & badges ⭐</h4>
+      </div>
+
+      <div id='certificates'>
+          
+          <div class="certificate-tile">
+              <div class = "certificate-title">TryHackMe</div>
+              <div class='certificate-image-block'>
+                  <script src="https://tryhackme.com/badge/552899">
+                  </script>
+              </div>
+          </div>
+
+          <div class="certificate-tile">
+              <div class = "certificate-title">Python</div>
+              <div class='certificate-image-block'>
+                  <img class='certificate-image' src="../Images/Coding certificates/Python_certificate.jpg" alt="certificate">
+                  <img class='certificate-image' src="../Images/Coding certificates/Python-core.png" alt="certificate">
+                  <img class='certificate-image' src="../Images/Coding certificates/Hacker rank python basic.png" alt="certificate">
+                  <img class='certificate-image' src="../Images/Coding certificates/hackaerrank python int.png" alt="certificate">
+              </div>
+          </div>
+
+          <div class="certificate-tile">
+              <div class = "certificate-title">Problem Solving</div>
+              <div class='certificate-image-block'>
+                  <img class='certificate-image' src="../Images/Coding certificates/hackaerrank problem solving.png" alt="certificate">
+              </div>
+          </div>
+
+          <div class="certificate-tile">
+              <div class = "certificate-title">JavaScript</div>
+              <div class='certificate-image-block'>
+                  <img class='certificate-image' src="../Images/Coding certificates/javascript.png" alt="certificate">
+              </div>
+          </div>
+
+          <div class="certificate-tile">
+              <div class = "certificate-title">Responsive Web Design</div>
+              <div class='certificate-image-block'>
+                  <img class='certificate-image' src="../Images/Coding certificates/responsive-web.png" alt="certificate">
+              </div>
+          </div>
+      
+          <div class="certificate-tile">
+              <div class = "certificate-title">Data analysis</div>
+              <div class='certificate-image-block'>
+                  <img class='certificate-image' src="../Images/Coding certificates/Data-analysis cerificate.png" alt="certificate">
+              </div>
+          </div>
+
+          <div class="certificate-tile">
+              <div class = "certificate-title">HTML</div>
+              <div class='certificate-image-block'>
+                  <img class='certificate-image' src="../Images/Coding certificates/HTML_certificate.jpg" alt="certificate">
+              </div>
+          </div>
+
+          <div class="certificate-tile">
+              <div class = "certificate-title">C#</div>
+              <div class='certificate-image-block'>
+                  <img class='certificate-image' src="../Images/Coding certificates/CSharp_certificate.jpg" alt="certificate">
+              </div>
+          </div>
+
+          <div class="certificate-tile">
+              <div class = "certificate-title">Java</div>
+              <div class='certificate-image-block'>
+                  <img class='certificate-image' src="../Images/Coding certificates/Java_certificate.jpg" alt="certificate">
+              </div>
+          </div>
 
       </div>
+
+      <!-- Collapsible certificate block -->
+      <script>
+          var coll = document.getElementsByClassName("certificate-title");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "flex") {
+              content.style.display = "none";
+              } else {
+              content.style.display = "flex";
+              }
+          });
+          }
+      </script>
+
+  </div>
+
+  <!-- Contact me -->
+  <div id="contact-me">
+		<!-- Main title -->
+		<div id="main-title">
+			<a href="../contact-me/" target='_blank'>< Contact Me /></a>
+			<hr>
+		</div>
+
+		<!-- Tray -->
+		<div class="main-tile">
+			<!-- Photo -->
+			<div class="contact-me-tile">
+				<img id="profile-photo" src="../Images/Profile photos/contact.png" alt="Profile Photo">
+
+			</div>
+			<!-- Information -->
+			<div class="contact-me-tile">
+				<h2 id="name">Sunil Lad</h2>
+				<div class="social-media">
+					<div>
+						<a href="https://www.instagram.com/sunil_lad08/" target="_blank"><img class="social-media-svg" src="../Images/SVG/instagram.svg" alt=" "></a>
+					</div>
+					<div>
+						<a href="https://www.linkedin.com/in/sunil-lad-11b542215/" target="_blank"><img class="social-media-svg" src="../Images/SVG/linkedin.svg" alt=" "></a>
+					</div>
+					<div>
+						<a href="https://github.com/Sunillad08" target="_blank"><img class="social-media-svg" src="../Images/SVG/github.svg" alt=" "></a>
+					</div>
+					<div>
+						<a href="mailto:ladsunil08@gmail.com" target="_blank"><img class="social-media-svg" src="../Images/SVG/email.svg" alt=" "></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
   </body>
 </html>
